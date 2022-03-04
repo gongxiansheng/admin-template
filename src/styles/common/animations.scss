@@ -1,0 +1,54 @@
+// 通用旋转
+@keyframes common-rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+// 雨滴下落
+@keyframes raindrop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(138px);
+  }
+}
+
+// 尾焰
+@keyframes wake-flame {
+  0% {
+    transform: translateY(0) rotateY(0);
+  }
+  20% {
+    transform: translateY(-8px) rotateY(15deg);
+  }
+  65% {
+    transform: translateY(-10px) rotateY(30deg);
+  }
+  80% {
+    transform: translateY(-5px) rotateY(15deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+  }
+}
+
+// 摇晃
+@keyframes rock {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  35% {
+    transform: translate3d(-3px, 2px, 0);
+  }
+  70% {
+    transform: translate3d(5px, -3px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

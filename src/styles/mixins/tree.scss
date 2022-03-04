@@ -1,0 +1,37 @@
+@mixin el-tree($hoverBackgrundColor: #fff, $color:$--color-primary) {
+  .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background: $hoverBackgrundColor;
+    color: $color
+  }
+  .el-tree {
+    background-color: initial;
+    .el-tree-node__expand-icon {
+      font-size: 16px;
+    }
+    .el-tree-node__content:hover {
+      background: $hoverBackgrundColor;
+      color: $color
+    }
+    .el-tree-node {
+      .el-tree-node__content {
+        height: 40px;
+        padding-right: 5px;
+        .project-tree-node {
+          font-size: 12px;
+          overflow: hidden;
+          .parent {
+            font-weight: bold;
+          }
+          .child {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .svg-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

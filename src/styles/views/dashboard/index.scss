@@ -1,0 +1,6 @@
+@include b(dashboard-container) {
+  color: #f00;
+  @include theme-rule(business) {
+    color: #0f0
+  }
+}

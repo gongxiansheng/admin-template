@@ -1,0 +1,205 @@
+// Variables
+
+// 注释说明
+// type|Category|Order
+
+/* Color
+-------------------------- */
+/// color|1|Brand Color|0
+$--color-primary: #409EFF !default;
+/// color|1|Background Color|4
+$--color-white: #ffffff !default;
+/// color|1|Background Color|4
+$--color-black: #000000 !default;
+/// color|1|Background Color|4
+$--color-white-light: #f9fafc !default;
+/// color|1|Background Color|4
+$--color-black-light: #5e6d82 !default;
+/// color|1|Background Color|4
+$--color-black-deep: #161c24 !default;
+/// background-color
+$--background-color: #F7F8FC !default;
+
+$--color-primary-black-1: mix(
+  $--color-black,
+  $--color-primary,
+  10%
+) !default;
+
+$--color-primary-light-1: mix(
+  $--color-white-light,
+  $--color-primary,
+  10%
+) !default;
+/* 78e8ff */
+$--color-primary-light-2: mix(
+  $--color-white-light,
+  $--color-primary,
+  20%
+) !default;
+/* 87eafe */
+$--color-primary-light-3: mix(
+  $--color-white-light,
+  $--color-primary,
+  30%
+) !default;
+/* 95ecfe */
+$--color-primary-light-4: mix(
+  $--color-white-light,
+  $--color-primary,
+  40%
+) !default;
+/* a3eefe */
+$--color-primary-light-5: mix(
+  $--color-white-light,
+  $--color-primary,
+  50%
+) !default;
+/* b2f0fe */
+$--color-primary-light-6: mix(
+  $--color-white-light,
+  $--color-primary,
+  60%
+) !default;
+/* c0f2fd */
+$--color-primary-light-7: mix(
+  $--color-white-light,
+  $--color-primary,
+  70%
+) !default;
+/* cef4fd */
+$--color-primary-light-8: mix(
+  $--color-white-light,
+  $--color-primary,
+  80%
+) !default;
+/* dcf6fd */
+$--color-primary-light-9: mix(
+  $--color-white-light,
+  $--color-primary,
+  90%
+) !default;
+/* ebf8fc */
+
+/// color|1|Functional Color|1
+$--color-success: #3ac088 !default;
+/// color|1|Functional Color|1
+$--color-warning: #b9613b !default;
+/// color|1|Functional Color|1
+$--color-danger: #ba3f3f !default;
+/// color|1|Functional Color|1
+$--color-info: #50bfff !default;
+
+$--color-warning-secondary: #fcee58 !default;
+
+
+/// color|1|Font Color|2
+$--color-text-primary: #98A3B8 !default;
+/// color|1|Font Color|2
+$--color-text-regular: #3B4A6A !default;
+/// color|1|Font Color|2
+$--color-text-secondary: #383838 !default;
+/// color|1|Font Color|2
+$--color-text-placeholder: #bbbbbb !default;
+/// color|1|Border Color|3
+$--border-color-base: #284b59 !default;
+/// color|1|Border Color|3
+$--border-color-light: #99a9bf !default;
+/// color|1|Border Color|3
+$--border-color-lighter: #ebeef5 !default;
+/// color|1|Border Color|3
+$--border-color-extra-light: #eff2f7 !default;
+
+// ScrollBar
+$--scrollbar-track-color: #161c24 !default;
+$--scrollbar-thumb-color: #284b59 !default;
+
+/* Link
+-------------------------- */
+$--link-color: $--color-primary-light-2 !default;
+$--link-hover-color: $--color-primary !default;
+
+/* Border
+-------------------------- */
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-color-hover: $--color-text-placeholder !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+/// borderRadius|1|Radius|0
+$--border-radius-base: 4px !default;
+/// borderRadius|1|Radius|0
+$--border-radius-small: 2px !default;
+/// borderRadius|1|Radius|0
+$--border-radius-circle: 100% !default;
+/// borderRadius|1|Radius|0
+$--border-radius-zero: 0 !default;
+/// borderRadius|1|Radius|0
+$--border-radius-big: 8px !default;
+/// borderRadius|1|Radius|0
+$--border-radius-round: 50% !default;
+
+// Box-shadow
+/// boxShadow|1|Shadow|1
+$--box-shadow-base: 0 1px 8px 0 rgba(7,106,247,0.10) !default;
+// boxShadow|1|Shadow|1
+$--box-shadow-dark: 0 2px 4px rgba(255, 255, 255, 0.12), 0 0 6px rgba(255, 255, 255, 0.12) !default;
+/// boxShadow|1|Shadow|1
+$--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+/// boxShadow|
+$--box-shadow-primary: 0 0 7px rgba(33, 181, 250, 0.27) !default;
+
+/* Fill
+-------------------------- */
+$--fill-base: #1a2b36 !default;
+$--fill-light: lighten($--fill-base, 3%) !default;
+$--list-odd-background-color: $--fill-base !default;
+$--list-even-background-color: #1d323d !default;
+$--list-hover-background-color: #398aa2 !default;
+
+/* Typography
+-------------------------- */
+$--font-path: '../fonts' !default;
+$--font-display: 'auto' !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-large: 20px !default;
+/// fontSize|1|Font Size|0
+$--font-size-large: 18px !default;
+/// fontSize|1|Font Size|0
+$--font-size-medium: 16px !default;
+/// fontSize|1|Font Size|0
+$--font-size-base: 14px !default;
+/// fontSize|1|Font Size|0
+$--font-size-small: 13px !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-small: 12px !default;
+/// fontWeight|1|Font Weight|1
+$--font-weight-primary: 500 !default;
+/// fontWeight|1|Font Weight|1
+$--font-weight-secondary: 100 !default;
+/// fontLineHeight|1|Line Height|2
+$--font-line-height-primary: 24px !default;
+/// fontLineHeight|1|Line Height|2
+$--font-line-height-secondary: 16px !default;
+$--font-color-disabled-base: #bbb !default;
+
+/* z-index
+-------------------------- */
+$--index-normal: 1 !default;
+$--index-top: 1000 !default;
+$--index-popper: 2000 !default;
+
+// Disable base
+$--disabled-fill-base: #436978 !default;
+$--disabled-color-base: $--color-text-placeholder !default;
+$--disabled-border-base: #284b59 !default;
+
+// Icon
+$--icon-color: #666 !default;
+$--icon-color-base: $--color-info !default;
+
+// Text Shadow
+$--title-text-shadow: 0 0 4px $--color-primary-light-1;
+
+// module gap
+$gap: 10px;
+$--app-header-height: 50px

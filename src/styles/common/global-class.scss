@@ -1,0 +1,108 @@
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-center {
+  @extend .flex-row;
+  justify-content: center;
+  align-self: center;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+.flex-static {
+  flex: 0 0 auto;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+
+.height-100-percent {
+  height: 100% !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.max-width-400 {
+  max-width: 400px;
+}
+
+.export-popover {
+  width: 120px;
+  min-width: 120px !important;
+  .el-popover__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .export-popover__content {
+    .el-form-item {
+      margin: 0 0 5px;
+      .el-form-item__label {
+        margin-bottom: 5px;
+        line-height: inherit;
+      }
+      .el-form-item__content {
+        line-height: inherit;
+      }
+      &.limit-item {
+        margin-bottom: 22px;
+      }
+    }
+    .btn-area {
+      text-align: right;
+      margin: 0;
+    }
+  }
+}
+
+.el-popup-parent--hidden {
+  padding-right: 0 !important;
+}
+
+.route-visit__allRoutesTable {
+  .filter-search {
+    width: 25%;
+  }
+  .routes-table {
+    margin-top: 8px;
+    height: 600px;
+  }
+}
+
+.route-autocomplete {
+  li {
+    line-height: 20px !important;
+    padding: 4px 20px !important;
+    .desc {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.handle .el-link:not(:last-child) {
+  margin-right: 5px;
+}

@@ -1,0 +1,41 @@
+@include b(navbar) {
+  display: flex;
+  justify-content: space-between;
+  height: $--app-header-height;
+  padding: 0 20px 0 50px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 4px 5px rgba(0,21,41,.08);
+  background-image: url(~@/assets/image/logo.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px center;
+  @include e(left) {
+    display: flex;
+    align-items: center;
+    .logo-link {
+      margin-right: 80px;
+    }
+    .title {
+      font-size: 20px;
+    }
+  }
+
+  @include e(right) {
+    .avatar-container {
+      .avatar-wrapper {
+        margin-top: 5px;
+        position: relative;
+        cursor: pointer;
+        .user-avatar {
+          width: 40px;
+          height: 40px;
+        }
+
+        .el-icon-caret-bottom {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

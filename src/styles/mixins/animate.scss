@@ -1,0 +1,180 @@
+@mixin animation($sec, $animation) {
+  animation: $animation $sec;
+}
+
+@mixin keyframe($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// 通用动画：旋转
+@keyframes rotate-center {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// 动画：旋转 + X轴移动自身50%
+@keyframes translate-rotate-center {
+  from {
+    transform: translateX(-50%) rotate(0);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+// 动画：单色闪烁发光
+@mixin single-color-shine($color, $sec, $length) {
+  @include animation(null, shine #{$sec}s linear infinite);
+
+  @include keyframe("shine") {
+    0% {
+      box-shadow: 0 0 0 #{$color};
+    }
+
+    50% {
+      box-shadow: 0 0 #{$length}px 0 #{$color};
+    }
+
+    100% {
+      box-shadow: 0 0 0 #{$color};
+    }
+  }
+}
+
+// 动画：双色闪烁发光
+@mixin double-color-shine($color-from, $color-to, $sec) {
+  @include animation(null, doubleShine #{$sec}s linear infinite);
+
+  @include keyframe("doubleShine") {
+    0% {
+      color: #{$color-from};
+    }
+
+    50% {
+      color: #{$color-to};
+    }
+
+    100% {
+      color: #{$color-from};
+    }
+  }
+}
+
+// 动画：主题切换
+@mixin mask-theme($name, $duration, $timing, $direction) {
+  animation: $name $duration $timing $direction;
+
+  @keyframes maskTop {
+		0%,
+    60% {
+			top: 0;
+			opacity: 1;
+    }
+    100% {
+			top: -51vh;
+			opacity: 0;
+    }
+	}
+	@keyframes maskBottom {
+		0%,
+		60% {
+			bottom: 0;
+			opacity: 1;
+		}
+		100% {
+			bottom: -51vh;
+			opacity: 0;
+		}
+	}
+	@keyframes maskLeft {
+		0%,
+		60% {
+			left: 0;
+			opacity: 1;
+		}
+		100% {
+			left: -50vw;
+			opacity: 0;
+		}
+	}
+	@keyframes maskRight {
+		0%,
+		60% {
+			right: 0;
+			opacity: 1;
+		}
+		100% {
+			right: -50vw;
+			opacity: 0;
+		}
+	}
+	@keyframes textOpacity {
+		0%,
+		20% {
+			opacity: 0;
+		}
+		80% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
+
+@keyframes cart-arrow {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cart-arrow-archaism {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cart-arrow-down-archaism {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}

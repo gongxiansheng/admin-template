@@ -1,0 +1,129 @@
+$primaryColor: $--color-primary;
+$borderRadius: 15px;
+
+
+.el-menu--horizontal>.el-menu-item {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+/** el-button **/
+// .el-button--mini, 
+// .el-button--mini.is-round {
+//   padding: 5px 10px;
+// }
+// .el-button--mini, 
+// .el-button--small {
+//   font-size: 12px;
+// }
+// .el-button:focus,
+// .el-button:hover {
+//   color: $primaryColor;
+//   border-color: rgba($primaryColor, .3);
+//   background-color: #ecf5ff;
+// }
+// .el-button--primary {
+//   background-color: $primaryColor;
+//   border-color: $primaryColor;
+//   box-shadow: 0 5px 8px 0 rgba(50,92,0,0.29);
+// }
+// .el-button--primary.is-plain {
+//   color: $--color-primary;
+//   background: #fff;
+//   border-color: $--color-primary;
+// }
+// .el-button--primary.is-plain:focus, 
+// .el-button--primary.is-plain:hover{
+//   background: $--color-primary-light-5;
+//   border-color: $--color-primary-light-5;
+// }
+// .el-button--primary:focus, 
+// .el-button--primary:hover {
+//   color: #fff;
+//   background-color: rgba($primaryColor, .8);
+//   border-color: rgba($primaryColor, .8);
+// }
+// .el-button--primary.is-active, 
+// .el-button--primary:active {
+//   color: #fff;
+//   background-color: rgba($primaryColor, .8);
+//   border-color: rgba($primaryColor, .8);
+// }
+// .el-button--primary.is-disabled, 
+// .el-button--primary.is-disabled:active, 
+// .el-button--primary.is-disabled:focus, 
+// .el-button--primary.is-disabled:hover {
+//   background-color: $--color-primary-light-4;
+//   border-color: $--color-primary-light-4;
+// }
+
+/** el-input **/
+// .el-input-number {
+//   &.is-controls-right {
+//     .el-input-number__decrease{
+//       border-radius: 0 0 $borderRadius
+//     }
+//     .el-input-number__increase {
+//       border-radius: 0 $borderRadius 0 0;
+//     }
+//   }
+//   .el-input-number__decrease{
+//     border-radius: $borderRadius 0 0 $borderRadius
+//   }
+//   .el-input-number__increase {
+//     border-radius: 0 $borderRadius $borderRadius 0;
+//   }
+// }
+// .el-input__inner {
+//   border-radius: $borderRadius;
+// }
+// .el-link.el-link--primary {
+//   color: $primaryColor
+// }
+// .el-link.el-link--default:hover {
+//   color: $primaryColor
+// }
+.el-scrollbar {
+  height: 100%;
+  &__wrap {
+    overflow-x: hidden;
+  }
+}
+
+// .el-radio-button__orig-radio:checked+.el-radio-button__inner{
+//   background: $primaryColor;
+//   color: #fff;
+//   border-color: $primaryColor;
+// }
+// .el-radio-button {
+//   .el-radio-button__inner {
+//     height: 22px;
+//     line-height: 22px;
+//     border-radius: 10px !important;
+//     margin-right: 10px;
+//     padding: 0 14px;
+//     border: 1px solid #DCDFE6;
+//     cursor: pointer;
+//     &:hover,
+//     &.active {
+//       background: $primaryColor;
+//       color: #fff;
+//     }
+//   }
+// }
+// .el-button--text {
+//   color: #3D4C6C;
+// }
+// .el-button--text:focus, 
+// .el-button--text:hover {
+//   color: $primaryColor;
+//   border-color: transparent;
+//   background-color: transparent;
+// }
+// .el-table .custom-header th {
+//   background-color: #F7F8FC;
+//   border-top: 2px solid $--color-primary;
+// }
+// .el-tree-node__expand-icon {
+//   color: $--color-text-secondary
+// }

@@ -1,0 +1,77 @@
+$fontColor:#9ea9ad;
+@include b(login) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f5f5;
+    .header  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 20px;
+        background-color: #fff;
+        .svg-icon {
+            width: 12px;
+            height: 10px;
+            margin: 0 8px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 520px;
+        height: 500px;
+        padding: 0 50px;
+        box-shadow: 0px 0px 23px 4px rgba(155, 155, 155, 0.1);
+        border-radius: 20px;
+        box-sizing: border-box;
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .login-form {
+            flex: 1;
+            padding-top: 180px;
+            color: rgb(63, 62, 62);
+            border-radius: 20px;
+            background-image: url(~@/assets/image/logo.png);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: 100px 0;
+            .el-form-item {
+                .el-input__prefix {
+                    width: 25px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                .el-input__inner {
+                    border-radius: 4px;
+                }
+            }
+            .submit-btn { 
+                width: 100%;
+                border-radius: 4px;
+            }
+            
+            .show-pwd {
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+                color: $fontColor;
+                cursor: pointer;
+            }
+            .el-form-item__error {
+                display: none;
+            }
+        }
+    }
+}

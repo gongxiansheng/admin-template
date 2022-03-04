@@ -1,0 +1,17 @@
+{
+  "name": "@fe/sst-table",
+  "version": "1.0.0",
+  "description": "Advanced vue table component based on el-table.",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm publish --registry=http://127.0.0.1:8080/repository/npm-host/"
+  },
+  "keywords": [
+    "sst",
+    "sst-table",
+    "el-table",
+    "vue-element-table"
+  ],
+  "author": "225",
+  "license": "MIT"
+}

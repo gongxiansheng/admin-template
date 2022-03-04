@@ -1,0 +1,35 @@
+@include b(app-container) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  @include clearfix;
+  
+  .main-container {
+    display: flex;
+    padding: 15px 10px;
+    height: calc(100vh - #{$--app-header-height});
+    background-color: #f5f5f5;
+    >.aside {
+        position: relative;
+        width: 210px;
+        height: 100%;
+        margin-right: 10px;
+        transition: width .28s;
+        .hamburger-container {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            color: #fff;
+            z-index: 2;
+            cursor: pointer;
+        }
+        &.hideSidebar {
+            width: 54px;
+        }
+    }
+  }
+
+  @import './navbar';
+  @import './app-main';
+  @import './sidebar';
+}
